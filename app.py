@@ -3,4 +3,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, Kanzal Qalandri is Learning GCP DevOps. And this is DEV Branch'
+    return 'Hello, Kanzal Qalandri is Learning GCP DevOps.'
