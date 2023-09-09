@@ -13,7 +13,7 @@ spec:
         app: gcp
     spec:
       containers:
-      - image: gcr.io/cicd3334/gcpdevops:latest
+      - image: gcr.io/cicd3334/gcpdevops-dev:latest
         name: gcp-devops-gke
         ports:
         - containerPort: 5000
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gcp-devops-gke-service
-  namespace: gcp-devops-prod
+  namespace: gcp-devops-dev
 spec:
   ports:
   - protocol: TCP
